@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>설문조사</title>
+</head>
+<body>
+    <h2>설문조사</h2>
+    <form action="poll.php" method="post">
+        <p>
+            <label for="name">이름</label>
+            <input type="text" name="name" required autofocus
+               palceholder="이름을 입력하세요">
+        </p>
+        <p>
+            <label for="e-mail">이메일</label>
+            <input type="email" name="email" required
+            placeholder="love@example.com">
+        </p>
+    <p><strong>나이</strong></p>
+            <!-- radio 타입 버튼은 name속성을 하나로 한다.-->
+            <label><input type="radio" name="age" value="10대">10대</label>
+            <label><input type="radio" name="age" value="20대">20대</label>
+            <label><input type="radio" name="age" value="30대">30대</label>
+            <label><input type="radio" name="age" value="40대">40대</label>
+            <label><input type="radio" name="age" value="50대">50대</label>
+            <label><input type="radio" name="age" value="60대">60대 이상</label>
+    <p><strong>원하는 강의(복수응답가능)</strong></p>
+        <label><input type="checkbox" name="subject" value="html">html</label>
+        <label><input type="checkbox" name="subject" value="javascript">javascript</label>
+        <label><input type="checkbox" name="subject" value="css">css</label>
+<p>
+    <!-- 여러줄 글 입력 rows: 행수(줄수) cols:열수 -->
+    <textarea name="content" rows="5" cols="80"
+    placeholder="하고 싶은 말을 써주세요" required></textarea>
+</p>
+<div>
+    <input type="submit" value="제출">
+</div>
+</form>
+</body>
+</html>
