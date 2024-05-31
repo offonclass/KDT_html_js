@@ -1,0 +1,17 @@
+table{
+    border: 3px solid red;
+    border-collapse: collapse;
+}
+th, td{
+    border: 1px solid rebeccapurple;
+    /* padding : 셀의 안쪽 여백(전방향) */
+    padding: 10px;
+}
+thead{
+    background-color: aqua;
+}
+img{
+    border: 5px solid rgb(65, 132, 99);
+    /* border-radius: 테두리를 둥글게 */
+    border-radius: 20px;
+}

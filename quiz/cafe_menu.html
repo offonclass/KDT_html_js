@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메뉴표 만들기</title>
+    <link rel="stylesheet" href="cafe_menu_style.css">
+</head>
+
+<body>
+    <h3>메뉴판</h3>
+    <table border="1" cellspacing="0" width="500">
+        <thead>
+            <colgroup>
+                <col style="background-color: rgb(146, 193, 193);">
+                <col>
+            </colgroup>
+            <tr>
+                <th height="30">분류</th>
+                <th>음식</th>
+                <th>가격</th>
+                <th>이미지</th>
+            </tr>
+        </thead>
+        <tbody height="100">
+            <tr>
+                <td rowspan="2">커피류</td>
+                <td>아메리카노</td>
+                <td>4,200</td>
+                <td><img src="images/americano.jpg" alt="아메리카노"> </td>
+            </tr>
+            <tr>
+                <td>돌체라떼</td>
+                <td>4,800</td>
+                <td><img src="images/돌체라떼.jpg" alt="돌체라떼"> </td>
+            </tr>
+            <tr>
+                <td rowspan="2">주스류</td>
+                <td>자바칩 프라푸치노</td>
+                <td rowspan="2">5,000</td>
+                <td><img src="images/자바칩프라푸치노.jpg" alt="자바칩프라푸치노"> </td>
+            </tr>
+            <tr>
+                <td>녹차 프라푸치노</td>
+                <td><img src="images/녹차 프라푸치노.jpg" alt="녹차 프라푸치노"> </td>
+                
+            </tr>
+        </tbody>
+
+
+    </table>
+</body>
+
+</html>

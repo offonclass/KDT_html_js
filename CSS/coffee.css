@@ -1,0 +1,16 @@
+h2{
+    /* color: red; */
+}
+#p1{
+    background-color: beige;
+}
+#p2{
+    font-family: 바탕체;
+    line-height: 2;
+}
+.Americano{
+    font-weight: bold;
+}
+.espresso{
+    font-size: 30px;
+}
