@@ -1,0 +1,30 @@
+#container{
+    width: 500px;
+    margin: 100px auto;
+} 
+
+form{
+    width: 500px;
+}
+
+fieldset{
+    border-width: 3px;
+}
+
+
+ul li{
+    list-style: none;
+  
+}
+
+#button{
+    margin: 20px auto;
+}
+
+#classId{
+    margin: 10px 10px 10px 30px;
+}
+#major{
+    width: 171px;
+    margin-left: 62px;
+}
