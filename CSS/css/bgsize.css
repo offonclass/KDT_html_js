@@ -1,0 +1,23 @@
+div{
+    width: 400px;
+    height: 400px; 
+    /* 16진수 방식 */
+    border: 1px solid black;
+    background: url(../images/watermelon.png) no-repeat center;
+}
+
+#bg1{
+    background-size: auto;
+}
+#bg2{
+    background-size: 320px;
+}
+#bg3{
+    background-size: 80%;
+}
+#bg4{
+    background-size: contain;
+}
+#bg5{
+    background-size: cover;
+}
