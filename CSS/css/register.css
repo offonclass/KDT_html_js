@@ -1,30 +1,47 @@
-#container{
+#container {
     width: 500px;
     margin: 100px auto;
-} 
+}
 
-form{
+form {
     width: 500px;
+    margin: 0 auto;
 }
 
-fieldset{
+fieldset {
     border-width: 3px;
+    margin-bottom: 16px;
 }
 
-
-ul li{
+ul li {
     list-style: none;
-  
 }
 
-#button{
-    margin: 20px auto;
+ul li label {
+    width: 100px;
+    float: left;
 }
 
-#classId{
+ul li input {
+    width: 140px;
+    height: 20px;
+}
+ul li select{
+    width: 140px;
+    height: 20px;
+}
+
+#button {
+    /* margin: 20px auto; */
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* #classId {
     margin: 10px 10px 10px 30px;
 }
-#major{
+
+#major {
     width: 171px;
     margin-left: 62px;
-}
+} */

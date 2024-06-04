@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <link rel="stylesheet" href="../css/date.css">
+</head>
+
+<body>
+    <div id="container">
+        <h2>회원 가입</h2>
+        <form action="/signup" method="post">
+            <ul>
+                <li>
+                    <label for="birthday">생일</label>
+                    <input type="date" id="birthday" name="birthday">
+                </li>
+                <li>
+                    <label for="birthday">회의 시간</label>
+                    <input type="time" id="meeting" name="meeting">
+                </li>
+                <li>
+                    <label for="theDay">예약일</label>
+                    <input type="datetime" id="theDay" name="theDay">
+                </li>
+                <li>
+                    <button type="submit">가입하기</button>
+                </li>
+            </ul>
+        </form>
+    </div>
+</body>
+
+</html>
