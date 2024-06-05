@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition 속성 - timing</title>
+</head>
+<style>
+    #ex div {
+        width: 100px;
+        height: 50px;
+        background-color: green;
+        float: left;
+        color: aliceblue;
+        margin: 10px;
+        text-align: center;
+        border-radius: 5px;
+        line-height: 50px;
+    }
+
+    #ex .ease{
+        /* all - 모든속성 */
+        /* 점점 빨라지다가 천천히 끝남 -> ^ */
+        transition: all 5s ease;
+    }
+
+    #ex .ease:hover{
+        height: 500px;
+    }
+
+    #ex .ease-in{
+        /* all - 모든속성 */
+        /* 느렸다가 빨라짐 -> ^ */
+        transition: all 5s ease-in;
+    }
+
+    #ex .ease-in:hover{
+        height: 500px;
+    }
+
+    #ex .ease-out{
+        /* all - 모든속성 */
+        /* 빠르게 시작하고 느리게 끝남 -> ^ */
+        transition: all 5s ease-out;
+    }
+
+    #ex .ease-out:hover{
+        height: 500px;
+    }
+    
+    #ex .ease-in-out{
+        /* all - 모든속성 */
+        /* 느리게 시작하고 느리게 끝남 -> ^ */
+        transition: all 5s ease-in-out;
+    }
+
+    #ex .ease-in-out:hover{
+        height: 500px;
+    }
+</style>
+
+<body>
+    <div id="ex">
+        <div class="ease">ease</div>
+        <div class="ease-in">ease-in</div>
+        <div class="ease-out">ease-out</div>
+        <div class="ease-in-out">ease-in-out</div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #wrap{
+            width: 200px;
+            height: 200px;
+            border: 1px solid #222;
+            margin: 100px 50px;
+            /* 기준이 부모 요소가 됨 */
+            position: relative;
+        }
+        /* block inline */
+        #wrap div{
+            border: 1px solid;
+            box-sizing: border-box;
+            width: 50px;
+            height: 50px;
+            background-color: skyblue;
+        }
+        #box1{
+            position: absolute;
+            /* z-index:100; */
+        }
+        #box2{
+            position: absolute;
+            /* z-index:100; */
+            top: 50px;
+            /* left: 0px; */
+        }
+        #box3{
+            position: relative;
+            /* top: 0px; */
+            /* right: 0px; */
+            top: 100px;
+        }
+        #box4{
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+        }
+        #box5{
+            position: absolute;
+            top: 0px;
+            left: 50px;
+        }
+        #box6{
+            position: absolute;
+            bottom: 50px;
+            left: 50px;
+        }
+        #box7{
+            position: absolute;
+            bottom: 50px;
+            right: -50px;
+        }
+        #box8{
+            position: absolute;
+            bottom: 100px;
+            right: -100px;
+        }
+        #box9{
+            position: relative;
+            bottom: 150px;
+            right: -150px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="wrap"> 
+        <!-- <div id="box1">1</div> -->
+        <div id="box2">2</div>
+        <div id="box3">3</div>
+        <!-- <div id="box4">4</div> -->
+        <!-- <div id="box5">5</div>
+        <div id="box6">6</div>
+        <div id="box7">7</div>
+        <div id="box8">8</div>
+        <div id="box9">9</div> -->
+    </div>
+</body>
+</html>
