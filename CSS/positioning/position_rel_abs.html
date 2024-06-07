@@ -22,25 +22,28 @@
             background-color: skyblue;
         }
         #box1{
-            position: absolute;
+            /* position: absolute; */
             /* z-index:100; */
         }
         #box2{
-            position: absolute;
+            /* position: absolute; */
             /* z-index:100; */
-            top: 50px;
+            /* top: 50px; */
             /* left: 0px; */
         }
         #box3{
-            position: relative;
+            /* position: absolute; */
             /* top: 0px; */
             /* right: 0px; */
-            top: 100px;
+            /* top: 100px; */
         }
         #box4{
-            position: absolute;
-            bottom: 0px;
-            left: 0px;
+            /* position: fixed; */
+            /* position: absolute; */
+            /* position: relative; */
+            top: 0px;
+            left: 50px;
+            z-index: 1;
         }
         #box5{
             position: absolute;
@@ -72,10 +75,10 @@
 </head>
 <body>
     <div id="wrap"> 
-        <!-- <div id="box1">1</div> -->
+        <div id="box1">1</div>
         <div id="box2">2</div>
         <div id="box3">3</div>
-        <!-- <div id="box4">4</div> -->
+        <div id="box4">4</div>
         <!-- <div id="box5">5</div>
         <div id="box6">6</div>
         <div id="box7">7</div>
