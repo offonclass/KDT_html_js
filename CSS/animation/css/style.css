@@ -37,8 +37,9 @@
 
 
 .product_list li:hover .detail {
-    transform: translateY(-200px) rotate(720deg);
-    transition: transform 1s ease-out;
+    transform: translateY(-200px) rotate(360deg);
+    border-radius: 100px;
+    transition: all 1s ease-out;
 }
 
 /* 

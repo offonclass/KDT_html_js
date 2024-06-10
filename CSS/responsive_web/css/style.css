@@ -1,0 +1,35 @@
+@charset "utf-0";
+
+/* 모바일 */
+*{margin: 0; padding: 0;}
+
+#container{
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgb(110, 9, 9);
+}
+header{
+    height: 100px;
+    border: 3px solid white;
+}
+main{
+    height: 600px;
+    border: 3px solid white;
+}
+footer{
+    height: 100px;
+    border: 3px solid white;
+}
+
+/* 태블릿pc 기준 */
+
+@media screen and (min-width:768px) {
+    #container{
+        background-color: green;
+    }
+}
+@media screen and (min-width:1024px) {
+    #container{
+        background-color: blue;
+    }
+}
