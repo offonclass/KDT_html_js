@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-direction</title>
+    <style>
+        #wrap {
+            width: 90%;
+            height: 400px;
+            margin: 0 auto;
+            border: 1px solid;
+            background-color: #eee;
+            display: flex;
+            flex-direction: column;
+            /* justify-content: space-between; */
+            /* justify-content: space-around; */
+            justify-content: end;
+            justify-content: flex-end;
+            /* justify-content: start; */
+            /* justify-content: flex-start; */
+            /* justify-content: left; */
+            /* justify-content: right; */
+            /* justify-content: baseline; */
+            
+
+        }
+
+        #wrap .box {
+            width: 30px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>justify-content 속성</h1>
+    <div id="wrap">
+        <div class="box" style="background-color: coral;">A</div>
+        <div class="box" style="background-color: lightblue;">B</div>
+        <div class="box" style="background-color: khaki;">C</div>
+        <div class="box" style="background-color: pink;">D</div>
+    </div>
+</body>
+
+</html>

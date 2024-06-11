@@ -1,0 +1,66 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+/* 모바일 */
+/* header스타일 */
+header .navbar {
+    display: flex;
+    flex-direction: column;
+    background-color: navy;
+    padding: 8px 24px;
+
+}
+
+header .navbar_logo {
+    font-size: 24px;
+    font-weight: bold;
+    /* padding: 10px 20px; */
+}
+
+header .navbar_logo a:hover {
+    color: skyblue;
+}
+
+header .navbar_menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header .navbar_menu li {
+    /* width: 50%; */
+    text-align: center;
+    padding: 10px;
+}
+
+header .navbar_menu li:hover {
+    background-color: rgb(110, 179, 206);
+}
+
+@media screen and (min-width: 768px) {
+    header .navbar {
+        flex-direction: row;
+        align-items: center;
+    }
+    header .navbar_menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    header .navbar_menu li{
+        padding: 16px 24px;
+    }
+}

@@ -1,0 +1,326 @@
+@charset "utf-8";
+
+/* 공통스타일 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+/* 모바일 및 공통 */
+/* header스타일 */
+header .navbar {
+    display: flex;
+    flex-direction: column;
+    background-color: navy;
+    padding: 8px 24px;
+
+}
+
+header .navbar_logo {
+    font-size: 24px;
+    font-weight: bold;
+    /* padding: 10px 20px; */
+}
+
+header .navbar_logo a:hover {
+    color: skyblue;
+}
+
+header .navbar_menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header .navbar_menu li {
+    /* width: 50%; */
+    text-align: center;
+    padding: 10px;
+}
+
+header .navbar_menu li:hover {
+    background-color: rgb(110, 179, 206);
+}
+
+header .navbar_toggleBtn {
+    position: absolute;
+    right: 30px;
+    /* 1em = 16px(default) or 부모의 폰트사이즈 */
+    font-size: 1.5em;
+}
+
+/* main 스타일 */
+main {
+    width: 90%;
+    margin: 20px auto;
+}
+
+main #contents {
+    width: 90%;
+    margin: 0 auto;
+}
+
+main #contents h2 {
+    font-size: 20px;
+    text-align: center;
+}
+
+/* footer 스타일 */
+footer {
+    width: 100%;
+    height: 50px;
+    /* position: absolute; */
+    /* bottom: 0; */
+    border-top: 2px solid #ccc;
+    margin-top: 100px;
+    clear: both;
+}
+
+footer #footer_menu {
+    height: 50px;
+    /* background-color: rgb(225, 137, 30); */
+    padding-left: 50px;
+    /* margin: 0 auto; */
+    text-align: center;
+}
+
+footer ul li {
+    /* float: left; */
+    display: inline-block;
+    margin: 5px;
+    padding: 0 15px 0 0;
+    border-right: 1px solid #ccc;
+    font-size: 13px;
+}
+
+footer ul li a {
+    color: #ccc;
+}
+
+footer ul li:nth-of-type(4) {
+    border: none;
+}
+
+/* index 스타일 */
+main #contents .main_pic {
+    width: 400px;
+    margin: 40px auto;
+}
+
+main #contents .main_pic img {
+    width: 400px;
+    height: 350px;
+}
+
+/* product 스타일 */
+#main #contents div h3 {
+    margin: 10px 0;
+    color: red;
+}
+
+#main #contents #watermelon,
+#strawberry {
+    width: 100%;
+    margin: 30px auto 10px;
+
+}
+
+#main #contents #watermelon img,
+#strawberry img {
+    width: 300px;
+    height: 250px;
+    margin: 10px auto;
+    display: block;
+    border-radius: 30px;
+}
+
+#contents #watermelon p,
+#strawberry p {
+    /* float: left; */
+    /* display: inline-block; */
+    /* width: 800px; */
+    line-height: 1.7;
+    text-align: justify;
+}
+
+/* board 스타일 */
+#contents table {
+    width: 90%;
+    border: 2px solid #ccc;
+    border-collapse: collapse;
+    margin: 30px;
+    font-size: 13px;
+
+}
+
+#contents table th,
+td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+#contents table thead {
+    background-color: #eee;
+}
+
+#contents table tr td:nth-child(2) {
+    text-align: left;
+}
+
+/* login 스타일 */
+#contents form {
+    width: 90%;
+    margin: 30px auto;
+    border: 1px solid #ccc;
+}
+
+#contents form ul {
+    padding: 20px;
+    /* margin: 20px; */
+}
+
+#contents form ul li {
+    margin: 20px;
+}
+
+#contents form label {
+    width: 80px;
+    float: left;
+}
+
+#contents form input[type='text'],
+input[type='password'] {
+    width: 60%;
+    height: 20px;
+    padding: 0 5px;
+}
+
+#contents form input[type='submit'],
+input[type='reset'] {
+    padding: 4px 10px;
+    margin-right: 10px;
+}
+
+/* 태블릿 pc 기준 */
+@media screen and (min-width: 768px) {
+    header .navbar {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    header .navbar_menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    header .navbar_menu li {
+        padding: 16px 24px;
+    }
+
+    header .navbar_toggleBtn {
+        display: none;
+    }
+
+    /* footer 스타일 */
+    footer ul li {
+        /* float: left; */
+        display: inline-block;
+        margin: 10px;
+        padding: 0 20px 0 0;
+        border-right: 1px solid #ccc;
+        font-size: 16px;
+    }
+
+    /* index 스타일 */
+
+    #main #contents .main_pic {
+        width: 500px;
+    }
+
+    #main #contents .main_pic img {
+        width: 500px;
+        height: 450px;
+    }
+
+    /* product 스타일 */
+    #main #contents #watermelon,
+    #strawberry {
+        height: 450px;
+        margin: 30px 0;
+    }
+
+    #main #contents #watermelon img,
+    #strawberry img {
+        float: left;
+        width: 350px;
+        height: 300px;
+        margin-right: 30px;
+        border-radius: 15px;
+        padding-bottom: 100px;
+
+    }
+
+    /* board 스타일 */
+    #contents table {
+        font-size: 16px;
+    }
+
+    /* login 스타일 */
+    #contents form {
+        width: 440px;
+
+    }
+
+    #contents form input[type='text'],
+    input[type='password'] {
+        width: 200px;
+        height: 25px;
+    }
+}
+
+/* PC 기준 */
+@media screen and (min-width: 1024px) {
+    #main #contents .main_pic {
+        width: 600px;
+    }
+
+    #main #contents .main_pic img {
+        width: 600px;
+        height: 500px;
+    }
+
+    /* product 스타일 */
+    #main #contents #watermelon,
+    #strawberry {
+        height: 450px;
+        margin: 30px 0;
+    }
+
+    #main #contents #watermelon img,
+    #strawberry img {
+        float: left;
+        /* display: inline-block; */
+        width: 450px;
+        height: 400px;
+        margin-right: 10px 30px 40px 0px;
+        border-radius: 15px;
+        padding-bottom: 50px;
+    }
+
+    #contents #watermelon p,
+    #strawberry p {
+        height: 450px;
+        line-height: 2;
+    }
+}

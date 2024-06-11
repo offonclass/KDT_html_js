@@ -92,9 +92,7 @@ footer {
 
 footer #footer_menu {
     height: 50px;
-    /* background-color: rgb(225, 137, 30); */
     padding-left: 50px;
-    /* margin: 0 auto; */
     text-align: center;
 }
 
@@ -128,6 +126,7 @@ footer ul li:nth-of-type(4) {
     height: 350px;
 }
 
+
 /* product 스타일 */
 #main #contents div h3 {
     margin: 10px 0;
@@ -147,6 +146,7 @@ footer ul li:nth-of-type(4) {
     height: 250px;
     margin: 10px auto;
     display: block;
+    border-radius: 30px;
 }
 
 #contents #watermelon p,
@@ -155,6 +155,7 @@ footer ul li:nth-of-type(4) {
     /* display: inline-block; */
     /* width: 800px; */
     line-height: 1.7;
+    text-align: justify;
 
 
 }
