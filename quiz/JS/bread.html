@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>산술연산 실습 예제</title>
+</head>
+<body>
+    <script>
+        // 빵 20개를 3명이 나눠 먹으려 한다.
+        // 몫과 나머지를 계산하여 아래 조건대로
+        // 출력하세요.(document.write() 사용)
+
+        // 출력1 - 각자 빵의 개수 : 
+        // 출력2 - 남은 빵의 개수 : 
+        let bread = 20;
+        let personNumber = 3;
+        let eachPerson = parseInt(bread/personNumber);
+        let remainder = bread % personNumber;
+
+        document.write("1. 각자 빵의 갯수 : ", eachPerson,"<br>")
+        document.write("2. 남은 빵의 갯수 : ", remainder,"<br>")
+        
+        // console.log(typeof(bread/personNumber));
+        
+
+    
+
+    </script>
+</body>
+</html>

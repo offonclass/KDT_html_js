@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>산술 연산</title>
+</head>
+
+<body>
+    <script>
+        // 산술 연산 : % - 나머지 연산자
+        console.log(3 + 4);
+        console.log(3 - 4);
+        console.log(3 * 4);
+        console.log(3 / 4);
+        console.log(3 % 2);
+        // let - 변수선언 키워드
+        let n1 = 10;
+        let n2 = 4;
+        console.log(n2 + n1);
+        console.log(n1 - n2);
+        console.log(n1 * n2);
+        console.log(n1 / n2);
+        console.log(n1 % n2);
+        console.log(n1 % n2);
+        // 성적의 합계와 평균을 계산하기
+        // 변수 이름은 직관적으로, 의미있게(sementic), Camel표기법으로 작성
+        // 변수이름 오류 - 띄어쓰기 금지, 숫자로 시작 금지, 
+        let engScore = 80
+        let mathScore = 75
+        // 합계
+        console.log(engScore + mathScore);
+        // 평균
+        let totalScore = engScore + mathScore
+        console.log(totalScore / 2);
+
+        document.write("합계 : " + totalScore);
+        document.write("<br>평균 : " + totalScore / 2 ,"<br>");
+
+        // 청바지 1개 구매
+        let jean = 0;
+        // jean = jean + 1;
+        // ++ : 1증가
+        // -- : 1감소
+        // jean++ -> 줄이 바뀐후 +1
+        // ++jean ->  +1하고 줄이 바뀜
+        ++jean; 
+        ++jean;
+        jean++;
+
+
+        console.log(jean);
+
+        let num1 = 10;
+        let result1 = ++num1
+
+        document.write("결과 값 : ", result1);
+
+
+    </script>
+</body>
+
+</html>

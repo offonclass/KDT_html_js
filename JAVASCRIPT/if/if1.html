@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if 예제</title>
+</head>
+
+<body>
+    <script>
+        /*
+
+        if(비교문){
+            실행(참)
+        }else{
+            실행(거짓)
+        }
+
+        
+
+         */
+
+
+        // 단독 if문
+        /* let limitedSpeed = 51;
+        document.write("현재속도는 시속 [",limitedSpeed,"km/h] 입니다<br>")
+        if(limitedSpeed >= 50){
+            document.write("안전속도 위반!!")
+        }else{
+            document.write("규정 속도를 준수 하고 있습니다.")
+        } */
+        // 점수가 60점 이상이면 합격, 아니면 불합격
+        /* let score = 50;
+        if(score >= 60){
+            document.write("합격!<br>")
+        }else{
+            document.write("불합격 ㅠㅠ<br>")
+        }
+        document.write("당신의 점수는 ",score,"입니다.")
+ */
+
+        let num = prompt("숫자를 입력하세요");
+        num = Number(num); //문자를 숫자로 형변환
+        document.write(num)
+        if ((num % 2) == 0) {
+            document.write("은(는) 짝수입니다.")
+        } else {
+            document.write("은(는) 홀수입니다.")
+
+        }
+
+
+
+
+    </script>
+
+</body>
+
+</html>
