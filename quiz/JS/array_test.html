@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let colors = ["white", "black", "red", "blue", "yellow", "orange", "green"]
+        //1.
+        console.log(colors[2]);
+        //2.
+        colors.push("purple")
+        console.log(colors);
+        //3.
+        console.log(colors.indexOf("black"))
+        //4.
+        let colors2 = colors.reverse();
+        console.log(colors2)
+        // 문자열 : 1차원 배열
+        // indexOf() : 앞에서 부터 찾음
+        // lastIndexOf() : 뒤에서 부터 찾음
+        /*  
+        let str="hello world, welcome world";
+        console.log(str.indexOf("world")) // 6
+        console.log(str.indexOf("asia")) // -1
+        console.log(str.lastIndexOf("world")) // 21
+        */
+    </script>
+</body>
+</html>

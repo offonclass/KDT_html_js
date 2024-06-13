@@ -9,19 +9,19 @@
 */
 // alert("testing...");
 // 나이에 따라서 입장료 계산
-let age = prompt("나이를 입력해주세요");
+let age = Number(prompt("나이를 입력해주세요"));
 let charge = 0;
 
-if (age > 0 && age < 8) {
+if (age > 0 && age < 8 && age==parseInt(age)) {
     document.write("미취학 아동입니다. <br>");
     charge = 1000;
-} else if (age < 14 ) {
+} else if (age>=8 && age < 14 && age==parseInt(age)) {
     document.write("초등학생입니다. <br>");
     charge = 2000;
-} else if(age < 20 ){
+} else if(age>=14 && age < 20  && age==parseInt(age)){
     document.write("중,고등학생입니다. <br>");
     charge = 2500;
-} else if(age>=20){
+} else if(age>=20  && age==parseInt(age)){
     document.write("성인입니다. <br>");
     charge = 3000;
 } else{

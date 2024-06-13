@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /* 
+        'y' - "계속 반복"
+        'n' - "반복 중단"
+        그외의 키 - "키를 잘못 눌렀습니다."
+        */
+        let key = "";
+        while (true) {
+            key = prompt("반복 할까요?", "y/n")
+            if (key == "y") {
+                alert("계속 반복")
+            } else if (key == "n") {
+                alert("반복 중단")
+                break;
+            } else {
+                alert("y 또는 n 키만 입력해주세요")
+            }
+        }
+    </script>
+</body>
+
+</html>

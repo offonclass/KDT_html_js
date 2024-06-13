@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반복문 예제</title>
+</head>
+
+<body>
+    <script>
+        // console.log("안녕하세요");
+
+        /* 
+        반복문(while)
+        
+        while(조건식){
+            조건식이 true이면 실행
+        } 
+            
+        */
+        let i = 0; //반복 변수
+        /* 
+                while(i < 100){
+                    document.write("안녕하세요"+(i+1)+"<br>");
+                    i++;
+                }
+         */
+        let sumVal = 0;
+        while (i <= 10) {
+            sumVal += i; //sumVal = sumVal + i;
+            console.log("i = "+ i +" sumVal = "+sumVal);
+            i++;
+        }
+        document.write(sumVal);
+    </script>
+</body>
+
+</html>
