@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열의 최댓값, 최솟값</title>
+</head>
+<body>
+    <h2>배열의 최댓값, 최솟값 계산</h2>
+    <script>
+        let scores = [70,80,90,65,77,44]
+        let maxVal = scores[0]; // 비교할 기준값
+        let minVal = scores[0]; // 비교할 기준값
+
+        for(i=0; i<scores.length; i++){
+            // 기준값과 배열값을 비교하여 큰값을 maxVal에 대입
+            if(maxVal < scores[i]){
+            maxVal = scores[i]
+            }
+        }
+
+        for(i=0; i<scores.length; i++){
+            // 기준값과 배열값을 비교하여 큰값을 maxVal에 대입
+            if(minVal > scores[i]){
+            minVal = scores[i]
+            }
+        }
+
+        document.write("최댓값 : "+maxVal)
+        document.write("<br>")
+        document.write("최솟값 : "+minVal)
+        document.write("<br>")
+        
+        document.write("최댓값의 위치 : "+scores.indexOf(maxVal))
+        document.write("<br>")
+        document.write("최솟값의 위치 : "+scores.indexOf(minVal))
+        document.write("<br>")
+        
+    </script>
+</body>
+</html>

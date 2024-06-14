@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch문 예제</title>
+</head>
+
+<body>
+    <script>
+        let food = "바나나"
+        // 각 case의 출력값이 동일한 경우 다음과 같이 작성 가능
+        switch (food) {
+            case "바나나":
+            case "사과":
+                document.write("과일입니다.<br>")
+                break;
+            case "양파":
+                document.write("야채입니다.<br>")
+                break;
+            default: food
+                document.write("과일도 야채도 아닙니다.<br>")
+                break;
+        }
+    </script>
+</body>
+
+</html>
