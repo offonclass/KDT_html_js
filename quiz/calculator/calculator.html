@@ -12,41 +12,80 @@
 <body>
     <h2>현's 계산기</h2>
     <div id="container">
-        <table border="0" width=500 height=400>
-            <tr>
-                <td colspan="3"><button class="button allClear" 
-                    onclick="allClear()"><p>AC</p></button></td>
-                <td><button class="button divide" onclick="calculate(4)"><p>÷</p></button></td>
-            </tr>
-            <tr>
-                <td><button class="button n7" onclick="inputNum('7')"><p>7</p></button></td>
-                <td><button class="button n8" onclick="inputNum('8')"><p>8</p></button></td>
-                <td><button class="button n9" onclick="inputNum('9')"><p>9</p></button></td>
-                <td><button class="button multiply" onclick="calculate(3)"><p>x</p></button></td>
-            </tr>
-            <tr>
-                <td><button class="button n4" onclick="inputNum('4')"><p>4</p></button></td>
-                <td><button class="button n5" onclick="inputNum('5')"><p>5</p></button></td>
-                <td><button class="button n6" onclick="inputNum('6')"><p>6</p></button></td>
-                <td><button class="button minus" onclick="calculate(2)"><p>-</p></button></td>
-            </tr>
-            <tr>
-                <td><button class="button n1" onclick="inputNum('1')"><p>1</p></button></td>
-                <td><button class="button n2" onclick="inputNum('2')"><p>2</p></button></td>
-                <td><button class="button n3" onclick="inputNum('3')"><p>3</p></button></td>
-                <td><button class="button plus" onclick="calculate(1)"><p>+</p></button></td>
-            </tr>
-            <tr>
-                <td colspan="2"><button class="button n0" onclick="inputNum('0')"><p>0</p></button></td>
-                <td><button class="button point" 
-                    onclick="inputNum('.')"><p>.</p></button></td>
-                <td><button class="button equal" 
-                    onclick="outputResult()"><div class="circle"><p>=</p></div></button></td>
-            </tr>
-        </table>
+        <div id="frame">
+            <div id="screen">
+                <p id="screenNum"></p>
+            </div>
+
+            <table border="0" width=500 height=400>
+                <tr>
+                    <td colspan="3"><button class="button allClear" onclick="allClear()">
+                            <p>AC</p>
+                        </button></td>
+                    <td><button class="button divide" onclick="calculate(4)">
+                            <p>÷</p>
+                        </button></td>
+                </tr>
+                <tr>
+                    <td><button class="button n7" onclick="inputNum('7')">
+                            <p>7</p>
+                        </button></td>
+                    <td><button class="button n8" onclick="inputNum('8')">
+                            <p>8</p>
+                        </button></td>
+                    <td><button class="button n9" onclick="inputNum('9')">
+                            <p>9</p>
+                        </button></td>
+                    <td><button class="button multiply" onclick="calculate(3)">
+                            <p>x</p>
+                        </button></td>
+                </tr>
+                <tr>
+                    <td><button class="button n4" onclick="inputNum('4')">
+                            <p>4</p>
+                        </button></td>
+                    <td><button class="button n5" onclick="inputNum('5')">
+                            <p>5</p>
+                        </button></td>
+                    <td><button class="button n6" onclick="inputNum('6')">
+                            <p>6</p>
+                        </button></td>
+                    <td><button class="button minus" onclick="calculate(2)">
+                            <p>-</p>
+                        </button></td>
+                </tr>
+                <tr>
+                    <td><button class="button n1" onclick="inputNum('1')">
+                            <p>1</p>
+                        </button></td>
+                    <td><button class="button n2" onclick="inputNum('2')">
+                            <p>2</p>
+                        </button></td>
+                    <td><button class="button n3" onclick="inputNum('3')">
+                            <p>3</p>
+                        </button></td>
+                    <td><button class="button plus" onclick="calculate(1)">
+                            <p>+</p>
+                        </button></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button class="button n0" onclick="inputNum('0')">
+                            <p>0</p>
+                        </button></td>
+                    <td><button class="button point" onclick="inputNum('.')">
+                            <p>.</p>
+                        </button></td>
+                    <td><button class="button equal" onclick="outputResult()">
+                            <div class="circle">
+                                <p>=</p>
+                            </div>
+                        </button></td>
+                </tr>
+            </table>
+        </div>
     </div>
 
-    <script>
+    <script src="./calculator1.js">
         /* 
 
         // 10의 거듭제곱 함수
@@ -62,136 +101,9 @@
          */
 
 
-        
-
-        // 임시 저장소 선언
-
-        let tempArray = []; // 숫자 하나하나를 임시로 받아낼 공간
-        let tempStr = ""; // tempArray를 하나의 문자열로 합칠 공간
-        let tempNum = 0; // 만들어진 한개의 수 임시 저장
-        let numbers = []; // 계산될 모든 수를 여기에 저장
-        let cal = 0; // 이전 연산값 // 더하기(1), 빼기(2), 곱하기(3), 나누기(4)
-        let result = 0; // 계산값 저장
 
 
-
-
-
-
-        // 숫자 입력 함수
-        let inputNum = function (x) {
-            tempArray.push(x); // 문자열로 받고 배열에 밀어넣기
-            tempStr = tempArray.join(''); // 하나의 문자열로 합치기
-            tempNum = Number(tempStr); // 문자열을 실수로 바꿔 저장
-            console.log(tempNum);
-        }
-
-
-
-
-
-        // 사칙연산 함수 (이전에 클릭한 사칙연산 기준)
-        let calculate = function (x) {
-
-            // 연산기호 출력
-            switch (x) {
-                case 1:
-                    console.log('+');
-                    break;
-                case 2:
-                    console.log('-');
-                    break;
-                case 3:
-                    console.log('x');
-                    break;
-                case 4:
-                    console.log('÷');
-                    break;
-            }
-
-            numbers.push(tempNum) // numbers(배열)에 완성된 실수 저장
-
-            // 임시 저장소 초기화
-            tempArray = [];
-            tempStr = "";
-            tempNum = 0;
-
-            // 이전에 클릭했던 사칙연산 버튼(cal값)을 통해 계산
-            
-            if (numbers.length === 1) {   //첫 연산 시도라면
-                result = numbers[0];
-            } else {
-                switch (cal) {
-                    case 1:
-                        result = result + numbers[(numbers.length - 1)]
-                        break;
-                    case 2:
-                        result = result - numbers[(numbers.length - 1)]
-                        break;
-                    case 3:
-                        result = result * numbers[(numbers.length - 1)]
-                        break;
-                    case 4:
-                        result = result / numbers[(numbers.length - 1)]
-                        break;
-                }
-            }
-            cal = x;
-        }
-
-
-
-
-        // 모든 전역변수 초기화
-        let allClear = function () {
-            tempArray = [];
-            tempStr = "";
-            tempNum = 0;
-            numbers = [];
-            cal = 0;
-            result = 0;
-            console.log('All Clear!!!');
-        }
-
-
-
-
-
-        let outputResult = function () {
-            numbers.push(tempNum) // numbers(배열)에 완성된 실수 저장
-
-            // 임시 저장소 초기화
-            tempArray = [];
-            tempStr = "";
-            tempNum = 0;
-
-            if (numbers.length === 1) {
-                result = numbers[0];
-            } else {
-                switch (cal) {
-                    case 1:
-                        result = result + numbers[(numbers.length - 1)]
-                        break;
-                    case 2:
-                        result = result - numbers[(numbers.length - 1)]
-                        break;
-                    case 3:
-                        result = result * numbers[(numbers.length - 1)]
-                        break;
-                    case 4:
-                        result = result / numbers[(numbers.length - 1)]
-                        break;
-                }
-            }
-            console.log("계산값 : " + result);
-
-            numbers = [];
-            cal = 0;
-            result = 0;
-        }
-
-
-
+    
 
 
 

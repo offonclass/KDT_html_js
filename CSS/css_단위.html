@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>단위</title>
+    <!-- 
+        절대 단위- 픽셀(px) : 모니터의 한 화면을 구성하는 최소단위의 사각형 1개의 크기 
+        상대 단위
+            - em : 부모 요소의 텍스트 크기에 상대적인 크기(배수)
+            - rem : html태그 크기(16px)에 상대적인 크기(배수)
+            - vw : view width, 뷰포트의 너비를 기준으로 상대적인 크기를 가짐(퍼센트)
+            - vh : view height, 뷰포트의 높이를 기준으로 상대적인 크기를 가짐(퍼센트)
+            - 
+        -->
+            <style>
+                body{
+                    font-size: 20px;
+                }
+                .p1{
+                    font-size: 2em;
+                }
+                .p2{
+                    font-size: 2rem;
+                }
+                .p3{
+                    font-size: 10vw;
+                }
+                .p4{
+                    font-size: 8vh;
+                }
+            </style>
+</head>
+<body>
+    <div>20px: success</div>
+    <p class="p1">2em :success</p>
+    <p class="p2">2rem :success</p>
+    <p class="p3">10vw :success(뷰포트 가로의 10%)</p> 
+    <p class="p4">8vh :success(뷰포트 세로의 8%)</p>
+</body>
+</html>

@@ -24,6 +24,21 @@
         // 밀리초로 출력(1970. 1. 1 자정 부터~)
         document.write("현재까지의 시간 : " + now.getTime()/1000 + "<br>")
         
+
+
+        let day = Math.round(now.getTime()/(1000*24*60*60))
+        document.write(`현재까지의 시간 : ${day}일 <br>` )
+
+        // 지나온 시간 계산하기
+        let today = new Date()
+        console.log(today);
+        let theDay = new Date("2024-05-29");
+        console.log(theDay);
+
+        let passed_time = today.getTime() - theDay.getTime();
+        passed_time = Math.round(passed_time/(1000*24*60*60));
+
+    document.write(`개강 후 현재까지 ${passed_time}일 지났습니다.`);
         
     </script>
 </body>

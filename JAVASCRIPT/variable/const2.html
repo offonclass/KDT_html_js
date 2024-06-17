@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>공의 속도(구속) 변환 프로그램</h3>
+
+
+    <script>
+        const RATE_KPH_MPH = 1.609;
+        
+        let mph, kph;
+
+        kph = prompt("구속(공의속도)를 입력하세요.");
+    if(kph !== null && !isNaN(kph)){
+        console.log(typeof(kph));
+        kph = parseFloat(kph); // 문자형을 실수형으로 변환
+
+        // 계산 - mph = kph/변환상수
+        mph = kph / RATE_KPH_MPH;
+
+        document.write(`${kph}km/h는 ${mph.toFixed(2)}mph 입니다.`)
+        }else{
+            document.write(`입력이 취소되었습니다.`)
+        }
+    </script>
+</body>
+</html>

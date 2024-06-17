@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math 객체</title>
+</head>                             
+<body>
+    <h2>Math 객체의 주요 함수</h2>
+    <script>
+        document.write(`반올림 : 1.695 -> ${Math.round(1.695)}<br>`)
+        document.write(`올림 : 1.695 -> ${Math.ceil(1.695)}<br>`)
+        document.write(`반올림 : 1.695 -> ${Math.floor(1.695)}<br>`)
+        document.write(`절댓값 : -1.695 -> ${Math.abs(-1.695)}<br>`)
+
+        // 0 <= Math.random < 1
+
+        // 1~10까지의 자연수중 무작위수 추출
+        document.write(`무작위 수 : ${Math.ceil(Math.random()*10)}<br>`)
+        
+        
+        let dice = Math.ceil(Math.random()*6)
+
+        document.write(`주사위 던지기 : ${dice}<br>`)
+
+        
+    </script>
+</body>
+</html>
