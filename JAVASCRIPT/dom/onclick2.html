@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onclick</title>
+</head>
+
+<body>
+    <div id="content">
+        <img src="images/peach.jpg" alt="복숭아" onclick="changePic()" id="fruit">
+    </div>
+</body>
+
+<script>
+    let fruitImg = document.querySelector("#fruit")
+
+    let sw = true;
+    fruitImg.onclick = () => {
+        
+        if(sw){
+            fruitImg.src = "images/oranges.jpg"
+            sw = false;
+        }else{
+            fruitImg.src = "images/peach.jpg"
+            sw = true;
+        }
+        
+/* 
+        switch (sw) {
+            case true:
+                fruitImg.src = "images/oranges.jpg"
+                sw = false;
+                break;
+            case false: fruitImg
+                fruitImg.src = "images/peach.jpg"
+                sw = true;
+                break;
+        } */
+    }
+
+
+
+    /*     
+        
+        function changePic(){
+            fruitImg.src = "images/oranges.jpg"
+        }
+        
+        // changePic 함수에서 ()를 하면 함수가 맨위로 올라가서 실행되어 버림
+        fruitImg.onclick = changePic; //changePic()함수 호출
+     */
+</script>
+
+</html>

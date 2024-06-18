@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onclick</title>
+</head>
+<body>
+    <div id="content">
+        <img src="images/peach.jpg" alt="복숭아" onclick="changePic()"
+        id="fruit">
+    </div>
+</body>
+
+<script>
+    function changePic() {
+        let fruitImg = document.querySelector("#fruit")
+        fruitImg.src = "images/oranges.jpg"
+    }
+</script>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="content">
+        <img src="images/peach-3314679_1280.jpg" alt="복숭아" id="fruit">
+    </div>
+
+    <script>
+        let fruitImg = document.querySelector("#fruit")
+
+        fruitImg.addEventListener('mouseover', function () {
+            fruitImg.src = "images/bilberries-2559051_1280.jpg";
+        })
+        fruitImg.addEventListener('mouseout', function () {
+            fruitImg.src = "images/peach-3314679_1280.jpg";
+        })
+
+
+
+        /*
+            let fruitImg = document.querySelector("#fruit")
+    
+            function changePic(){
+            fruitImg.src = "images/oranges-15046_1280.jpg"
+        }
+            function originPic(){
+            fruitImg.src = "images/peach-3314679_1280.jpg"
+        }
+    
+            // on접두사 생략, 두번째 인자에 함수
+            fruitImg.addEventListener('mouseover',changePic)
+            fruitImg.addEventListener('mouseout',originPic)
+         */
+    </script>
+</body>
+
+</html>

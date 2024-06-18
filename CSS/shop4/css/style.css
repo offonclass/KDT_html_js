@@ -58,6 +58,10 @@ header .navbar_toggleBtn {
     font-size: 1.5em;
 }
 
+header .navbar_toggleBtn .active{
+    display: flex;
+}
+
 /* main 스타일 */
 main {
     width: 90%;

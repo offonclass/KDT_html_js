@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제이쿼리 예제</title>
+    <!-- 라이브러리 CDN 가져오기 -->
+   
+</head>
+
+<body>
+    <p id="show"></p>
+    <div class="pic"></div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<script>
+    /* 
+            window.onload = () =>{
+                document.getElementById('show').innerHTML = "안녕~"
+            }
+             */
+
+    //  제이쿼리(실행) 환경
+    $(document).ready(() => {
+        // 선택자(태그,id,class) - $(선택자)안에 기입
+        // text(문자) - innerHTML
+        // html(태그, 문자) - innerHTML
+        // $('#show').text("안녕")
+        // 체이닝 방식(연결사슬)
+        $('#show').html("<h3>안녕<h3>")
+            // .css("color","red")
+            .css({ color: "blue", fontSize: "24px" });
+        $('.pic').html("<img src='./images/peach.jpg' alt='복숭아'> ")
+        // .children().css('border-radius','200px')
+
+        // css() - 객체 방식일때는 속성을 카멜표기로 한다.
+        $('.pic > img').css({borderRadius : "20px"})
+    })
+</script>
+
+
+
+</body>
+
+
+
+</html>
