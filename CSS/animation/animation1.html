@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>애니메이션 예제</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            /* background-color: aqua; */
+
+            
+
+
+        }
+        #box1{
+            background-color: pink;
+            animation-name: changeBg;
+            /* 지속시간 */
+            animation-duration: 3s;
+            /* 반복 */
+            animation-iteration-count: infinite; 
+        }
+        #box2{
+            background-color: pink;
+            /* animation-name: rotate; */
+            /* animation-duration: 2s; */
+            /* 지속시간 */
+            /* animation-duration: 3s; */
+            /* 반복 */
+            /* animation-iteration-count: infinite;  */
+
+            animation: rotate 1s infinite;
+
+
+        }
+
+        @keyframes changeBg {
+            0%{
+                background-color: aqua;
+                border-radius: 0;
+
+            }
+            30%{
+                background-color: green;
+                border-radius: 30%;
+            }
+            70%{
+                background-color: rgb(32, 0, 128);
+                border-radius: 50%;
+            }
+            100%{
+                background-color: aqua;
+                border-radius: 0;
+            }
+        }
+
+        @keyframes rotate {
+            form{
+                transfrom: rotate(0)
+
+            }
+
+            to{
+                transform: rotate(1800deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="box1"></div>
+    <div id="box2"></div>
+</body>
+</html>

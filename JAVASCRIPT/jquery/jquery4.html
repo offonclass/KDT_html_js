@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script>
+        $(function(){
+
+            $('#name').css({backgroundColor: 'lightblue',
+                fontSize: '20px'
+            })
+
+            $('.info').append('<p>만나서 반갑습니다</p>')
+            $('.pic').html('<img src="images/bilberries.jpg" alt=블루베리>')
+            $('.pic img').css({borderRadius: "20px"})
+
+
+        })
+
+
+    </script>
+
+
+</head>
+<body>
+    <h2>방문을 환영합니다.</h2>
+    <div class="info">
+        <p id="name">내 이름은 경현입니다.</p>
+        <p>나는 서울에 살아요</p>
+    </div>
+    <div class="pic"></div>
+</body>
+</html>
