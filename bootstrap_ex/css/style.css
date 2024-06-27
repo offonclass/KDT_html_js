@@ -1,0 +1,26 @@
+h4{
+    color: red;
+    /* em은 부모기준, rem은 html 기준 */
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+    html{
+        font-size: 14px;
+    }
+
+    .col-4{
+        width: 50%;
+        margin-bottom: 2rem;
+    }
+}
+@media screen and (max-width: 400px) {
+    html{
+        font-size: 12px;
+    }
+
+    .col-4{
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+}
